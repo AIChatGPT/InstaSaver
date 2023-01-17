@@ -20,7 +20,7 @@ main_keyboard = [
 
 def start(update, context):
     update.message.reply_text(
-        '👋 Welcome to my bot! It can download any type of media on Instagram! (Public accounts only)',
+        '👋 Hi There, I am Mukul Sharma. How can I help You?)',
         reply_markup=ReplyKeyboardMarkup(main_keyboard, resize_keyboard=True),
     )
 
@@ -35,12 +35,12 @@ def help(update, context):
 
 def donate(update, context):
     update.message.reply_text(
-        'Thank you for donating! ❤\n\nThis will help covering the costs of the hosting',
+        'Thank you for following Me! ❤\n\nThis will help covering the costs of the hosting',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        'Buy Me A Coffee', 'https://www.buymeacoffee.com/simonfarah'
+                        'Buy Me A Coffee', 'https://www.instagram.com/motionmukul'
                     )
                 ]
             ]
@@ -113,7 +113,7 @@ def send_dp(update, context):
 
 
 def main():
-    BOT_TOKEN = ''
+    BOT_TOKEN = '5650097897:AAHSP1gDdnm6xHHIT_VSMfbHoNC4iEHpYSw'
     updater = Updater(BOT_TOKEN, use_context=True)
     dp = updater.dispatcher
 
